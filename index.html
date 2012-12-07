@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DigitalNoiz</title>
+	<!-- jQuery Mobile setup -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="mylibs/jQueryMobile/jquery.mobile-1.0.1.min.css" />
+	<script src="mylibs/jquery-1.7.1.min.js"></script>
+	<script src="mylibs/jQueryMobile/jquery.mobile-1.0.1.min.js"></script>
+	<!-- Phonegap setup -->
+	<script type="text/javascript" charset="utf-8" src="js/phonegap.js"></script>
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" charset="utf-8" src="js/script.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>DigitalNoiz</h1>
+	</div>
+	<div data-role="content">
+		<h2>Media Player</h2>
+		<div id="audioPosition">
+			<input type="range" name="slider" id="slider" value="0" min="0" max="100" data-highlight="true" disabled />
+		</div>
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="play" data-role="button" data-icon="audio-play" data-iconpos="notext" value="Play" />
+			<input type="button" id="pause" data-role="button" data-icon="audio-pause" data-iconpos="notext" value="Pause" disabled />
+			<input type="button" id="stop" data-role="button" data-icon="audio-stop" data-iconpos="notext" value="Stop" />
+			<input type="button" id="rewind" data-role="button" data-icon="audio-rewind" data-iconpos="notext" value="Rewind" />
+			<input type="button" id="record" data-role="button" data-icon="audio-record" data-iconpos="notext" value="Record">
+		</div>
+		<div id="recording"></div>
+	</div>
+</div>
+
+</body>
+</html>
